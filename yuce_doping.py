@@ -118,15 +118,9 @@ if __name__ == '__main__':
 
             best_model = my_model.to(device)
 
-            for yuanshu in [4, 3, 2]:
+            for yuanshu in [4, ]:
                 dir_2 = None
                 names = None
-                if yuanshu == 2:
-                    dir_2 = "doping_eryuan.lmdb"
-                    names = "eryuan"
-                if yuanshu == 3:
-                    dir_2 = "doping_sanyuan.lmdb"
-                    names = "sanyuan"
                 if yuanshu == 4:
                     dir_2 = "doping_siyuan.lmdb"
                     names = "siyuan"
@@ -141,4 +135,5 @@ if __name__ == '__main__':
                                              pin_memory=True)
                 test_loss_2 = evaluate(best_model, test_dataloader, normalizers, device, criterion, nums, i, names)
                 print(f"{names}-{i} is done!")
+
 
