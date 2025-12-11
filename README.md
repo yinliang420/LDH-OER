@@ -5,9 +5,9 @@ All datasets and model checkpoints associated with this work are publicly availa
 🔗 **[https://huggingface.co/datasets/yinliang22/oer_dataset](https://huggingface.co/datasets/yinliang22/oer_dataset)**
 
 This repository includes:
-- Processed multi-modal input data
-- Trained model checkpoints (e.g., `.pt` files)
-- Metadata and annotations used in the study
+- Processed input data
+- Trained model checkpoints
+- Prediction dataset
 
 To download the data, simply visit the link above or use the `huggingface_hub` library in Python:
 
